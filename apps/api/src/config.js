@@ -8,7 +8,7 @@ const envFile = exports.NODE_ENV === 'development' ? '.env.local' : '.env';
 (0, dotenv_1.config)({ path: (0, path_1.resolve)(__dirname, `../${envFile}`), override: true });
 exports.PORT = process.env.PORT || 8000;
 exports.corsOptions = {
-    origin: ['https://mini-loket.vercel.app', 'http://localhost:3000'],
+    origin: ['https://miniloket-web.vercel.app', 'http://localhost:3000'],
     credentials: true
 };
 exports.JWT_ACCESS_SECRET = process.env.ACCESS_TOKEN_SECRET || '';
