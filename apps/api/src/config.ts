@@ -8,6 +8,7 @@ const envFile = NODE_ENV === 'development' ? '.env.local' : '.env'
 config({ path: resolve(__dirname, `../${envFile}`), override: true })
 
 export const PORT = process.env.PORT || 8000
+
 export const corsOptions: CorsOptions = {
   origin: ['https://miniloket-web.vercel.app', 'http://localhost:3000'],
   credentials: true
